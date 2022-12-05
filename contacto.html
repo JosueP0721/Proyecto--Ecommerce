@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Contacto</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
+    </header>
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a class="nav-enlace" href="index.html">Inicio</a>
+            <a class="nav-enlace" href="nosotros.html">Nosotros</a>
+            <a class="nav-enlace" href="tienda.html">Tienda</a>
+            <a class="nav-enlace" href="blog.html">Blog</a>
+            <a class="nav-enlace" href="galeria.html">Galería</a>
+            <a class="nav-enlace" href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Contacto</h2>
+        <form class="formulario">
+            <fieldset>
+                <legend>Tus Datos</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" placeholder="Tu Nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto</label>
+                    <input id="asunto" type="text" placeholder="Tu Asunto" required>
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" placeholder="Tu Email" required>
+                </div>
+                <div class="campo">
+                    <label for="tel">Telefono</label>
+                    <input id="tel" type="tel" placeholder="Tu Telefono" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" required></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>País</legend>
+
+                <div class="campo">
+                    <label for="pais">País</label>
+                    <select id="pais">
+                        <option value="" disabled selected>--Seleccionar--</option>
+                        <option value="AR">Argentina</option>
+                        <option value="PR">Perú</option>
+                        <option value="MX">México</option>
+                        <option value="CO">Colombia</option>
+                        <option value="ES">España</option>
+                        <option value="CL">Chile</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Extra</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input name="tipo" type="radio" id="cliente">
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input name="tipo" type="radio" id="Proveedor">
+                </div>
+                <div class="campo">
+                    <label for="categoria">Categoría de Interés</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Exterior">
+                        <option value="Recamaras">
+                        <option value="Oficina">
+                        <option value="Televisión">
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <input class="boton" type="submit" value="Enviar Formulario">
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer-contenido contenedor">
+            <div>
+                <h3>Categorías</h3>
+                <nav class="footer-seccion">
+                    <a href="#">Cocina</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardín</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <nav class="footer-seccion">
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Misión, Visión y Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Políticas de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav class="footer-seccion">
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Ayuda en Línea</a>
+                    <a href="#">Confianza y Seguridad</a>
+                </nav>
+            </div>
+        </div>
+        <p class="footer-derechos">Página hecha por Josué Palma (Curso de Juan Pablo de la Torre)</p>
+    </footer>
+
+</html>
